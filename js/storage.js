@@ -217,9 +217,19 @@ const Storage = {
     }
 };
 
+// Initialize default admin credentials if none exist
+if (!localStorage.getItem('adminCredentials')) {
+    Storage.setAdminCredentials({
+        username: 'admin',
+        password: 'admin123'
+    });
+}
+
+
 // Initialize data when storage.js loads
 Storage.initPlacementData();
 
+ 
 // Initialize with sample marks data if none exists
 if (!localStorage.getItem('studentMarks')) {
     const sampleMarks = [

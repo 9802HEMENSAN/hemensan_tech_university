@@ -13,8 +13,35 @@ A responsive and user-friendly university web portal created using HTML, CSS, an
 
 ## 📁 Project Structure
 
-university-website/ │── index.html # Home page │── programmewise_student_list.html # Program-wise Student List │── student_registration.html # Student Registration Form │── feedback.html # Feedback Form │── admin.html # Admin Dashboard │── login.html # Admin Login │ ├── css/ # All CSS files for styling │ ├── styles.css │ ├── home.css │ ├── program-list.css │ ├── registration.css │ ├── feedback.css │ ├── admin.css │ └── login.css │ ├── js/ # JavaScript files for interactivity │ ├── registration.js │ ├── feedback.js │ ├── admin.js │ ├── auth.js │ ├── storage.js │ └── performance.js │ └── images/ └── university-logo.png # Logo used across the website
-
+```
+university-website/
+│── index.html                          # Home page
+│── programmewise_student_list.html    # Program-wise Student List
+│── student_registration.html          # Student Registration Form
+│── feedback.html                      # Feedback Form
+│── admin.html                         # Admin Dashboard
+│── login.html                         # Admin Login
+│
+├── css/                               # All CSS files for styling
+│   ├── styles.css
+│   ├── home.css
+│   ├── program-list.css
+│   ├── registration.css
+│   ├── feedback.css
+│   ├── admin.css
+│   └── login.css
+│
+├── js/                                # JavaScript files for interactivity
+│   ├── registration.js
+│   ├── feedback.js
+│   ├── admin.js
+│   ├── auth.js
+│   ├── storage.js
+│   └── performance.js
+│
+└── images/
+    └── university-logo.png            # Logo used across the website
+```
 
 ---
 
@@ -37,4 +64,37 @@ university-website/ │── index.html # Home page │── programmewise_stu
 
 1. **Clone the repository**
    ```bash
-   https://github.com/9802HEMENSAN/hemensan_tech_university.git
+   git clone https://github.com/9802HEMENSAN/hemensan_tech_university.git
+   ```
+
+2. **Navigate into the project directory**
+   ```bash
+   cd university-website
+   ```
+
+3. **Open in browser**
+   - Open `index.html` or any other page with a browser.
+
+4. **Customize**
+   - Replace placeholder content and images in the `images/` folder.
+   - Connect to a backend/database if needed (optional).
+
+---
+
+## 🚀 Technologies Used
+
+- HTML5
+- CSS3 (Flexbox & Media Queries)
+- JavaScript (Vanilla)
+
+---
+
+## 🙌 Acknowledgements
+
+Thanks to all contributors, testers, and mentors for the inspiration behind this educational university web portal project.
+
+---
+
+## 📄 License
+
+This project is open-source and available under the [MIT License](LICENSE).
