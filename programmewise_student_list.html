@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Placement Records | Tech University</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/program-list.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <img src="images/university-logo.png" alt="University Logo" class="logo">
+        <h1>Tech University - Programme-wise Student List</h1>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="programmewise_student_list.html">Programme-wise Student List</a>
+        <a href="student_registration.html">Student Registration</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html" style="float:right">Admin Login</a>
+    </div>
+
+    <div class="content">
+        <div class="programme-selector">
+            <label for="branchSelect">Select Branch:</label>
+            <select id="branchSelect">
+                <option value="all">All Branches</option>
+                <!-- Options will be populated from JavaScript -->
+            </select>
+        </div>
+
+        <div class="placement-carousels">
+            <div class="swiper-container">
+                <div class="swiper-wrapper" id="placementsWrapper">
+                    <!-- Placement cards will be inserted here -->
+                </div>
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="js/program-list.js"></script>
+</body>
+</html>

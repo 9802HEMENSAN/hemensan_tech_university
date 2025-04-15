@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback | Tech University</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/feedback.css">
+</head>
+<body>
+    <div class="header">
+        <img src="images/university-logo.png" alt="University Logo" class="logo">
+        <h1>Tech University</h1>
+    </div>
+
+    <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="programmewise_student_list.html">Programme-wise Student List</a>
+        <a href="student_registration.html">Student Registration</a>
+        <a href="feedback.html">Feedback</a>
+        <a href="login.html" style="float:right">Admin Login</a>
+    </div>
+
+     
+
+    <div class="content">
+        <div class="feedback-container">
+            <div class="feedback-header">
+                <h1>Share Your Feedback</h1>
+                <p>We value your opinion! Please take a moment to share your experience with us.</p>
+            </div>
+
+            <form id="feedbackForm" class="feedback-form">
+                <div class="form-group">
+                    <label for="name" class="required-field">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                    <div id="nameError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email" class="required-field">Email Address</label>
+                    <input type="email" id="email" name="email" required>
+                    <div id="emailError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="studentId">Student ID (Optional)</label>
+                    <input type="text" id="studentId" name="studentId">
+                </div>
+
+                <div class="rating-container">
+                    <div class="rating-title">How would you rate your overall experience?</div>
+                    <div class="rating-options">
+                        <div class="rating-option">
+                            <input type="radio" id="rating-1" name="rating" value="1" required>
+                            <label for="rating-1">1</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating-2" name="rating" value="2">
+                            <label for="rating-2">2</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating-3" name="rating" value="3">
+                            <label for="rating-3">3</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating-4" name="rating" value="4">
+                            <label for="rating-4">4</label>
+                        </div>
+                        <div class="rating-option">
+                            <input type="radio" id="rating-5" name="rating" value="5">
+                            <label for="rating-5">5</label>
+                        </div>
+                    </div>
+                    <div id="ratingError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>What type of feedback are you providing? (Select all that apply)</label>
+                    <div class="feedback-types">
+                        <div class="feedback-type">
+                            <input type="checkbox" id="type-website" name="feedbackType" value="website">
+                            <label for="type-website">Website Experience</label>
+                        </div>
+                        <div class="feedback-type">
+                            <input type="checkbox" id="type-admission" name="feedbackType" value="admission">
+                            <label for="type-admission">Admission Process</label>
+                        </div>
+                        <div class="feedback-type">
+                            <input type="checkbox" id="type-content" name="feedbackType" value="content">
+                            <label for="type-content">Content Quality</label>
+                        </div>
+                        <div class="feedback-type">
+                            <input type="checkbox" id="type-support" name="feedbackType" value="support">
+                            <label for="type-support">Support Services</label>
+                        </div>
+                        <div class="feedback-type">
+                            <input type="checkbox" id="type-other" name="feedbackType" value="other">
+                            <label for="type-other">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="feedback" class="required-field">Your Feedback</label>
+                    <textarea id="feedback" name="feedback" required placeholder="Please share your detailed feedback here..."></textarea>
+                    <div id="feedbackError" class="error"></div>
+                </div>
+
+                <div class="form-group">
+                    <label for="suggestions">Suggestions for Improvement (Optional)</label>
+                    <textarea id="suggestions" name="suggestions" placeholder="Do you have any suggestions for how we can improve?"></textarea>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Submit Feedback</button>
+                </div>
+
+                <div id="successMessage" class="success-message"></div>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/storage.js"></script>
+    <script src="js/feedback.js"></script>
+</body>
+</html>
