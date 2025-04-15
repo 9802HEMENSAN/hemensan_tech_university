@@ -7,7 +7,7 @@ A responsive and user-friendly university web portal created using HTML, CSS, an
 ## 🌐 Live Preview
 
 > (Optional) Add your GitHub Pages or Netlify link here:  
-> 👉 https://your-username.github.io/university-website/
+> 👉 https://hemensan-tech-university.netlify.app/
 
 ---
 
@@ -69,7 +69,7 @@ university-website/
 
 2. **Navigate into the project directory**
    ```bash
-   cd university-website
+   cd hemensan_tech_university
    ```
 
 3. **Open in browser**
