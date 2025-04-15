@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/registration.css">
 </head>
 <body>
+    <div class="background"> 
     <div class="header">
         <img src="images/university-logo.png" alt="University Logo" class="logo">
         <h1>Tech University</h1>
@@ -32,13 +33,13 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="fullName" class="required-field">Full Name</label>
-                        <input type="text" id="fullName" name="fullName" required>
+                        <input type="text" id="fullName" name="fullName" placeholder="Enter your name" required>
                         <div id="fullNameError" class="error"></div>
                     </div>
                     
                     <div class="form-group">
                         <label for="email" class="required-field">Email Address</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" placeholder="Enter your email @gmail.com" required>
                         <div id="emailError" class="error"></div>
                     </div>
                 </div>
@@ -46,7 +47,7 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="phone" class="required-field">Phone Number</label>
-                        <input type="tel" id="phone" name="phone" required>
+                        <input type="tel" id="phone" name="phone" placeholder="Enter your phone no." required>
                         <div id="phoneError" class="error"></div>
                     </div>
                     
@@ -59,7 +60,7 @@
 
                 <div class="form-row">
                     <div class="form-group">
-                        <label for="gender">Gender</label>
+                        <label for="gender" class="required-field" >Gender </label>
                         <div class="radio-group">
                             <label class="radio-option">
                                 <input type="radio" name="gender" value="male"> Male
@@ -89,14 +90,14 @@
                 <div class="form-row">
                     <div class="form-group">
                         <label for="address">Address</label>
-                        <textarea id="address" name="address" rows="3"></textarea>
+                        <textarea id="address" name="address" rows="3" placeholder="Enter your local address"></textarea>
                     </div>
                 </div>
 
                 <div class="form-row">
                     <div class="form-group">
                         <label for="serialNumber" class="required-field">Serial Number in Merit List</label>
-                        <input type="text" id="serialNumber" name="serialNumber" required>
+                        <input type="text" id="serialNumber" name="serialNumber" placeholder="serial Number in Merit list pdf." required>
                         <div id="serialNumberError" class="error"></div>
                     </div>
                 </div>
@@ -110,6 +111,12 @@
         </div>
     </div>
 
+     <!-- footer -->
+     <footer class="footer">
+        <p>&copy; 2025 Tech University. All Rights Reserved.</p>
+    </footer>
+
+   </div>
     <script src="js/storage.js"></script>
     <script src="js/registration.js"></script>
 </body>

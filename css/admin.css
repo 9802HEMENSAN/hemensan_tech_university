@@ -10,6 +10,16 @@ body {
     flex-direction: column;
 }
 
+.background {
+    background-image: url('../images/server.jpg');  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
 .header {
     background-color: #2c3e50;
     color: white;
@@ -65,8 +75,10 @@ body {
 }
 
 .registrations-section {
+    font-weight: bold;
     padding: 20px 30px;
     background: white;
+    font-size: larger;
     margin: 20px 30px 0;
     border-radius: 8px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
@@ -75,6 +87,7 @@ body {
 .toggle-section {
     padding: 0 30px;
     margin-top: 15px;
+    font-size: larger;
 }
 
 .view-toggle {
@@ -112,13 +125,16 @@ body {
 /* Views Container */
 .views-container {
     flex: 1;
-    background: white;
+    /* background: white; */
+    background-color: rgb(255, 255, 255);
+    font-weight: bold;
     margin: 0 30px 30px;
     border-radius: 0 8px 8px 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     overflow: hidden;
     display: flex;
     flex-direction: column;
+    font-size: larger;
 }
 
 .toggle-view {

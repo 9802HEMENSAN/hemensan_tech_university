@@ -1,101 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard | Tech University</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/admin.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-    <div class="header">
-        <img src="images/university-logo.png" alt="University Logo" class="logo">
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/admin.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="background">
+      <div class="header">
+        <img
+          src="images/university-logo.png"
+          alt="University Logo"
+          class="logo"
+        />
         <h1>Tech University - Admin Dashboard</h1>
         <div class="admin-menu">
-            <button id="logoutBtn" class="btn-logout">
-                <span class="material-icons">logout</span>
-                Logout
-            </button>
+          <button id="logoutBtn" class="btn-logout">
+            <span class="material-icons">logout</span>
+            Logout
+          </button>
         </div>
-    </div>
+      </div>
 
-    <div class="dashboard-container">
+      <div class="dashboard-container">
         <div class="registrations-section">
-            <h2>Student Registrations</h2>
-            <div class="table-container">
-                <table id="studentsTable" class="data-table">
-                    <thead>
-                        <tr>
-                            <th>#</th>
-                            <th>Full Name</th>
-                            <th>Email</th>
-                            <th>Phone</th>
-                            <th>Programme</th>
-                            <th>Registration Date</th>
-                        </tr>
-                    </thead>
-                    <tbody></tbody>
-                </table>
-            </div>
+          <h2>Student Registrations</h2>
+          <div class="table-container">
+            <table id="studentsTable" class="data-table">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Full Name</th>
+                  <th>Email</th>
+                  <th>Phone</th>
+                  <th>Programme</th>
+                  <th>Registration Date</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
         </div>
 
         <div class="toggle-section">
-            <div class="view-toggle">
-                <button id="performanceBtn" class="toggle-btn active">
-                    <span class="material-icons">assessment</span>
-                    Student Performance
-                </button>
-                <button id="feedbackBtn" class="toggle-btn">
-                    <span class="material-icons">feedback</span>
-                    Student Feedback
-                </button>
-            </div>
+          <div class="view-toggle">
+            <button id="performanceBtn" class="toggle-btn active">
+              <span class="material-icons">assessment</span>
+              Student Performance
+            </button>
+            <button id="feedbackBtn" class="toggle-btn">
+              <span class="material-icons">feedback</span>
+              Student Feedback
+            </button>
+          </div>
         </div>
 
         <div class="views-container">
-            <div id="performanceView" class="toggle-view active">
-                <div class="performance-container">
-                    <div class="programme-selector">
-                        <label for="programmeSelect">Select Programme:</label>
-                        <select id="programmeSelect">
-                            <option value="all">All Programmes</option>
-                            <option value="BTech-CS">B.Tech Computer Science</option>
-                            <option value="BTech-EE">B.Tech Electrical Engineering</option>
-                            <option value="BSc-Math">B.Sc Mathematics</option>
-                            <option value="BBA">Bachelor of Business Administration</option>
-                        </select>
-                    </div>
-                    
-                    <div id="performanceResults" class="performance-results"></div>
-                </div>
-            </div>
+          <div id="performanceView" class="toggle-view active">
+            <div class="performance-container">
+              <div class="programme-selector">
+                <label for="programmeSelect">Select Programme:</label>
+                <select id="programmeSelect">
+                  <option value="all">All Programmes</option>
+                  <option value="BTech-CS">B.Tech Computer Science</option>
+                  <option value="BTech-EE">
+                    B.Tech Electrical Engineering
+                  </option>
+                  <option value="BSc-Math">B.Sc Mathematics</option>
+                  <option value="BBA">
+                    Bachelor of Business Administration
+                  </option>
+                </select>
+              </div>
 
-            <div id="feedbackView" class="toggle-view">
-                <div class="table-container">
-                    <table id="feedbackTable" class="data-table">
-                        <thead>
-                            <tr>
-                                <th>#</th>
-                                <th>Name</th>
-                                <th>Email</th>
-                                <th>Student ID</th>
-                                <th>Rating</th>
-                                <th>Feedback Type</th>
-                                <th>Comments</th>
-                                <th>Date</th>
-                            </tr>
-                        </thead>
-                        <tbody></tbody>
-                    </table>
-                </div>
+              <div id="performanceResults" class="performance-results"></div>
             </div>
+          </div>
+
+          <div id="feedbackView" class="toggle-view">
+            <div class="table-container">
+              <table id="feedbackTable" class="data-table">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Student ID</th>
+                    <th>Rating</th>
+                    <th>Feedback Type</th>
+                    <th>Comments</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
         </div>
-    </div>
+      </div>
 
+      <footer class="footer">
+        <p>&copy; 2025 Tech University. All Rights Reserved.</p>
+      </footer>
+    </div>
     <script src="js/storage.js"></script>
     <script src="js/auth.js"></script>
     <script src="js/admin.js"></script>
     <script src="js/performance.js"></script>
-</body>
+  </body>
 </html>
